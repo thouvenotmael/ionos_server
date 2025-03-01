@@ -1,0 +1,9 @@
+version: '3'
+services:
+  flask_app:
+    image: mon_flask_app
+    volumes:
+            - /home/appli/log/:/app/log/
+    ports:
+      - "80:5000"
+    restart: unless-stopped
