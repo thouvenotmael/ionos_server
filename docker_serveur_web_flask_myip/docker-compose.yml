@@ -3,7 +3,7 @@ services:
   flask_app:
     image: mon_flask_app
     volumes:
-            - /home/appli/log/:/app/log/
+            - /home/ionos_server/docker_serveur_web_flask_myip/log/:/app/log/
     ports:
       - "80:5000"
     restart: unless-stopped
